@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400|Quicksand:300,400);
+
+/*variable margins*/
+body {margin-left: 48px; } /*IE*/
+@media (min-width: 1581px) {body {margin-left: 96px; margin-bottom: 155px; } } /*1600-1601*/
+@media (min-width: 1025px) and (max-width: 1580px) {body {margin-left: 64px; margin-bottom: 104px; } }
+@media (min-width: 801px) and (max-width: 1024px) {body {margin-left: 48px; margin-bottom: 78px; } }
+@media (min-width: 641px) and (max-width: 800px) {body {margin-left: 32px; margin-bottom: 52px; } }
+@media (max-width: 640px) {body {margin-left: 16px; margin-bottom: 26px; } }
+
+body {
+	background-color: #fff;
+	color: #282828;
+	-webkit-transition: margin 1s;
+	-moz-transition: margin 1s;
+	transition: margin 1s;
+}
+body {font-family: "Raleway"; font-weight: 400; }
+h1, h2 {font-family: "Quicksand"; font-weight: 400; margin-top: 2em; }
+
+/*logo*/
+.logo32 {width: 32px; height: 32px; }
+.margin-right {margin-right: 0.5em; }
+
+/*inverted*/
+body.inv {background-color: black; color: #ccc; }
+.inv a:link:not(:visited) {color: lightblue; }
+.inv a:link:visited {color: mediumpurple; }
+
+/*logo pages*/
+.big-same-border img {border: 16px solid white; }
+.big-alt-border img {border: 16px solid black; }
+.inv .big-same-border img {border: 16px solid black; }
+.inv .big-alt-border img {border: 16px solid white; }
+
+/*fis*/
+#fis .pre {white-space: pre; }
+#fis code {font-size: 8pt; color: #060; padding-right: 4em; }
+#fis .orig {font-size: 8pt; color: #66f; padding-right: 4em; }
+/**/
+#fis code, .orig {font-size: 8pt; padding-right: 4em; }
+#fis code {color: #060; }
+#fis .orig {color: #66f; }
+#fis .inv code {color: #6c6; }
+#fis .inv .orig {color: #99f; }
+
+/*branding*/
+body > h1:first-child {background-image: url("/i/32^2.png"); background-size: 32px 32px; background-repeat: no-repeat; padding-left: 48px;}
+body > h1:first-child > img[src="/i/logo.svg"]:first-child {display: none; }
+body > h1:first-child > img[src="/i/favicon-glider.png"]:first-child {display: none; }
+.monospace {font-family: "deja vu sans mono", "bitstream vera sans mono", "courier new", monospace; }
+
+/*index pages*/
+/*body:not(.not-index) > table {font-family: "deja vu sans mono", "bitstream vera sans mono", "courier new", monospace; }
+body:not(.not-index) > table > tbody > tr > td:not(:last-child):not(:first-child) {padding-right: 1em; }
+body:not(.not-index) > table > tbody > tr > td:first-child + td + td {white-space: nowrap; }*/
+body#autoindex > table {font-family: "deja vu sans mono", "bitstream vera sans mono", "courier new", monospace; }
+body#autoindex > table > tbody > tr > td:not(:last-child):not(:first-child) {padding-right: 1em; }
+body#autoindex > table > tbody > tr > td:first-child + td + td {white-space: nowrap; }
+#autoindex td {max-height: 71.5px; overflow: hidden; }
+#autoindex td {vertical-align: top; }
+#autoindex th {text-align: left; }
