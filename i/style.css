@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400|Quicksand:300,400);
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400|Raleway:400');
 
 /*variable margins*/
 body {margin-left: 48px; } /*IE*/
